@@ -1,0 +1,11 @@
+commit c11a45e13fc0b866519700782d60945e448d0857 (HEAD -> master)
+Author: Kristina Rozenberg <ember969@mail.ru>
+Date:   Sun Feb 16 00:28:32 2020 +0300
+
+    add status.txt
+
+commit 83808b386992f73f4cc36d5f2b2af563225e4650
+Author: Kristina Rozenberg <ember969@mail.ru>
+Date:   Sun Feb 16 00:25:28 2020 +0300
+
+    add .gitignore
