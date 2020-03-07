@@ -1,0 +1,256 @@
+html, body {
+  height: 100%;
+}
+
+html, body, div, footer, header, main, img, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+
+body {
+  width: 100%;
+  line-height: 1;
+  background-color: bisque;
+}
+
+
+header {
+  background-color: coral;
+  border: 5px;
+  border-bottom-style: groove;
+}
+
+header > .container h1 {
+  padding: 1vw 3vw 1vw 1vw;
+  font-style: italic;
+}
+
+header > div div {
+  border-left: 1px solid;
+  overflow: hidden;
+}
+
+header > div div h2{
+  padding: 1vw 1vw 0vw 0vw;
+  border: 1px;
+  border-bottom-style: solid;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container2 a {
+  text-decoration: underline;
+  padding: 5px 5px 0 0;
+}
+
+.container2 a:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.container2 h3 {
+  font-weight: bolder;
+}
+
+
+.filter {
+  background-color: bisque;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: left;
+}
+
+.filterContainer p {
+  margin: 0;
+  padding: 0 20px;
+  border: 1px;
+  border-right-style: solid;
+}
+
+.filterContainer div label {
+  padding: 0 0 0 5px;
+}
+
+.filterContainer div input {
+  overflow: hidden;
+}
+
+.filterContainer button {
+  background-color: burlywood;
+  border: none;
+  color: bisque;
+  padding: 5px 10px;
+  display: none;
+  font-size: 12px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.filterContainer button:active {
+  border: 2px solid coral;
+}
+
+
+main {
+  padding: 0 17vw;
+  background-color: peru;
+}
+
+.post {
+  background-color: lavenderblush;
+  align-content: center;
+  margin: 0;
+  padding: 3vw 7vw 7vw 7vw;
+  border-top: 5px peru solid;
+}
+
+.post:first-child {
+  border-top: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 3px 0;
+}
+
+.text {
+  border: 3px double;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+}
+
+.like  {
+  float: right;
+  background-color: burlywood;
+  border: none;
+  color: brown;
+  margin: 1px 0 0 0;
+  padding: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.featuresContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px;
+}
+
+.features a {
+  text-decoration: underline;
+}
+
+.features a:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.features button {
+  background-color: burlywood;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.features button:active{
+  border: 2px solid coral;
+}
+
+.myLike {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: brown;
+}
+
+
+.load {
+  background-color: lavenderblush;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  border: none;
+}
+
+.loadButton {
+  background-color: burlywood;
+  border: none;
+  color: bisque;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.loadButton:active {
+  border: 2px solid coral;
+}
+
+
+.footerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 1vw 0;
+  border: 5px;
+  border-top-style: groove;
+}
+
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 0;
+  }
+
+  .filterContainer {
+    display: block;
+    text-align: right;
+  }
+
+  .filterContainer p {
+    display: none;
+  }
+
+  .filterContainer button {
+    display: inline-block;
+  }
+
+  .post .container {
+    display: block;
+  }
+
+  .post .container h3 {
+    padding: 0 0 6px 0;
+  }
+
+  .footerContainer {
+    display: block;
+    text-align: center;
+  }
+
+  .footerContainer p {
+    padding: 2px;
+  }
+}

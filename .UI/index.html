@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+<body>
+    <header>
+      <div class="container">
+        <h1>MyTwi</h1>
+        <div>
+          <h2>Kellein-Mei</h2>
+          <div class="container2">
+            <a class="addPostLink">Добавить пост</a>
+            <h3>|</h3>
+            <a class="exit">Выйти</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="filter, filterContainer">
+      <p>Фильтр</p>
+      <div>
+        <label for="author">имя автора:</label>
+        <input type="text" id="author" name="author">
+      </div>
+      <div>
+        <label for="date">дата:</label>
+        <input type="text" id="date" name="date">
+      </div>
+      <div>
+        <label for="hashtag">хэштеги:</label>
+        <input type="text" id="hashtag" name="hashtag">
+      </div>
+      <button>Найти</button>
+    </div>
+
+
+    <main>
+      <article class="post">
+        <div class="container">
+          <h3>МоряМоревна</h3>
+          <p>15:33<span style="display:inline-block; width:17px;"> </span>23.02.2020</p>
+        </div>
+        <p class="text">мувик по сонеку сделал мне очень приятно (https://vk.com/morevnamorya)</p>
+        <p class="text">#sonic</p>
+        <img src="https://sun9-4.userapi.com/c857216/v857216324/f42e0/5VwD9QGwlMk.jpg">
+        <button class="like"><h3><i>1003</i> &#10084</h3></button>
+      </article>
+
+      <article class="post">
+        <div class="container">
+          <h3>МоряМоревна</h3>
+          <p>12:43<span style="display:inline-block; width:17px;"> </span>31.12.2019</p>
+        </div>
+        <p class="text">О мальчике и девочке которые не замерзли<br><br>
+          После всевозможных милых рассказов о добре или смерти, Горький подарил мне в этом году двух маленьких
+          негодников, существующих вне всеобщей праведности и благоговения, спасибо Горький
+          (https://vk.com/morevnamorya)</p>
+        <p class="text">#игры_в_классику</p>
+        <img src="https://sun9-7.userapi.com/c205820/v205820754/29129/Ad2YEh5E64o.jpg">
+        <button class="like"><h3><i>386</i> &#10084</h3></button>
+      </article>
+
+      <article class="post">
+        <div class="container">
+          <h3>Kellein-Mei</h3>
+          <p>12.43<span style="display:inline-block; width:17px;"> </span>21.12.2019</p>
+        </div>
+        <p class="text">Всем спасибо, ребят, люблю вас! ❤ <br>
+          /Пы.Сы. Завтра будет опросик, ждите ;)/</p>
+        <div class="featuresContainer">
+          <div class="container2, features">
+            <a>редактировать</a>
+            <button>удалить</button>
+          </div>
+          <h3 class="myLike"><i>121</i> &#10084</h3>
+        </div>
+      </article>
+
+      <div class="load">
+        <button class="loadButton">Загрузить ещё</button>
+      </div>
+    </main>
+
+
+    <footer class="footerContainer">
+      <p>MyTwi</p>
+      <p>Розенберг Кристина</p>
+      <p>2 курс, 8 группа</p>
+      <p>fpm.rozenber@bsu.by</p>
+      <p>08.03.2020</p>
+    </footer>
+
+</body>
+</html>
