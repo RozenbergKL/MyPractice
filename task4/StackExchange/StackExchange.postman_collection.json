@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "0bf09353-f902-4d93-b832-5a57f00e40a6",
+		"name": "StackExchange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.stackexchange.com/questions/no-answers?site=stackoverflow&tagged=java&sort=activity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.stackexchange.com/questions/no-answers?site=stackoverflow&tagged=java&sort=activity",
+					"protocol": "https",
+					"host": [
+						"api",
+						"stackexchange",
+						"com"
+					],
+					"path": [
+						"questions",
+						"no-answers"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "stackoverflow"
+						},
+						{
+							"key": "tagged",
+							"value": "java"
+						},
+						{
+							"key": "sort",
+							"value": "activity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.stackexchange.com/tags?site=stackoverflow&sort=popular",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.stackexchange.com/tags?site=stackoverflow&sort=popular",
+					"protocol": "https",
+					"host": [
+						"api",
+						"stackexchange",
+						"com"
+					],
+					"path": [
+						"tags"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "stackoverflow"
+						},
+						{
+							"key": "sort",
+							"value": "popular"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.stackexchange.com/users/2;3;5?site=stackoverflow&sort=reputation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.stackexchange.com/users/2;3;5?site=stackoverflow&sort=reputation",
+					"protocol": "https",
+					"host": [
+						"api",
+						"stackexchange",
+						"com"
+					],
+					"path": [
+						"users",
+						"2;3;5"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "stackoverflow"
+						},
+						{
+							"key": "sort",
+							"value": "reputation"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

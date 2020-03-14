@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "26ba1aa3-793b-4bd3-b50f-03df807b0982",
+		"name": "Studio Ghibli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://ghibliapi.herokuapp.com/films?director=Hayao Miyazaki&producer=Toshio Suzuki",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ghibliapi.herokuapp.com/films?director=Hayao Miyazaki&producer=Toshio Suzuki",
+					"protocol": "https",
+					"host": [
+						"ghibliapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"films"
+					],
+					"query": [
+						{
+							"key": "director",
+							"value": "Hayao Miyazaki"
+						},
+						{
+							"key": "producer",
+							"value": "Toshio Suzuki"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ghibliapi.herokuapp.com/species?name=Cat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ghibliapi.herokuapp.com/species?name=Cat",
+					"protocol": "https",
+					"host": [
+						"ghibliapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"species"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ghibliapi.herokuapp.com/films",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "1c218bf6-ad55-43b2-8044-f6928316826a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "http.cat",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Length",
+						"value": "400",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"a4340064-856d-401f-b8d6-bce7e1603d8b\",\n    \"title\": \"Smth new\",\n    \"description\": \"smth else\",\n    \"director\": \"Hayao Miyazaki\",\n    \"producer\": \"Toshio Suzuki\",\n    \"release_date\": \"2021\",\n    \"rt_score\": \"94\",\n    \"people\": [\n        \"https://ghibliapi.herokuapp.com/people/\"\n    ],\n    \"species\": [\n        \"https://ghibliapi.herokuapp.com/species/\"\n    ],\n    \"locations\": [\n        \"https://ghibliapi.herokuapp.com/locations/\"\n    ],\n    \"vehicles\": [\n        \"https://ghibliapi.herokuapp.com/vehicles/\"\n    ],\n    \"url\": \"https://ghibliapi.herokuapp.com/films/a4340064-856d-401f-b8d6-bce7e1603d8b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ghibliapi.herokuapp.com/films",
+					"protocol": "https",
+					"host": [
+						"ghibliapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"films"
+					],
+					"query": [
+						{
+							"key": "Host",
+							"value": "ghibliapi.herokuapp.com",
+							"disabled": true
+						},
+						{
+							"key": "content-type",
+							"value": "application/json",
+							"disabled": true
+						},
+						{
+							"key": "Content-length",
+							"value": "500",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
