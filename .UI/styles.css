@@ -39,6 +39,21 @@ header > div div h2{
   border-bottom-style: solid;
 }
 
+header > div .authorization {
+  border: none;
+  overflow: hidden;
+}
+
+header > div .authorization h2{
+  padding: 1vw 1vw 0vw 0vw;
+  border: none;
+}
+
+.authorization h2:hover {
+  color: grey;
+  cursor: pointer;
+}
+
 .container2 {
   display: flex;
   justify-content: space-evenly;
@@ -107,7 +122,7 @@ main {
   background-color: peru;
 }
 
-.post {
+article {
   background-color: lavenderblush;
   align-content: center;
   margin: 0;
@@ -115,7 +130,7 @@ main {
   border-top: 5px peru solid;
 }
 
-.post:first-child {
+article:first-child {
   border-top: 0;
 }
 
@@ -126,7 +141,7 @@ main {
   padding: 0 0 3px 0;
 }
 
-.post .container div {
+article .container div {
   display: flex;
   justify-content: right;
 }
@@ -139,7 +154,7 @@ main {
   padding: 5px 10px;
 }
 
-.post img {
+article img {
   width: 100%;
   height: 100%;
 }
@@ -244,15 +259,15 @@ main {
     display: inline-block;
   }
 
-  .post .container {
+  article .container {
     display: block;
   }
 
-  .post .container h3 {
+  article .container h3 {
     padding: 0 0 6px 0;
   }
 
-  .post .container p {
+  article .container p {
     padding: 0 17px 0 0;
   }
 
